@@ -22,6 +22,6 @@
 
 ##### Helpful resources
 
-https://help.github.com/articles/using-pull-requests/
-http://daringfireball.net/projects/markdown/syntax
+ - https://help.github.com/articles/using-pull-requests/
+ - http://daringfireball.net/projects/markdown/syntax
 
