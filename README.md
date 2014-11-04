@@ -18,3 +18,9 @@
   - A code sample showing how to use arrays
 5. Send me a pull request when you have completed the tasks
 
+
+
+##### Helpful resources
+
+https://help.github.com/articles/using-pull-requests/
+
