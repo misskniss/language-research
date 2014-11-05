@@ -1,2 +1,8 @@
 php: jmazzare
 ruby: acole, kgrosh, arthurfc
+go:
+rust:
+scala:
+clojure:
+swift:
+dart:
