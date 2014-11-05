@@ -17,7 +17,31 @@ Ruby is a language of careful balance. Its creator, Yukihiro “Matz” Matsumot
 He has often said that he is “trying to make Ruby natural, not simple,” in a way that mirrors life.
 
 ### Explanations
+Ruby is an objected-oriented scripting language with many practical uses and
+perhaps most popular that of a web developing language.
 
+In Ruby a new scope is created when you first define a variable. That variable is then accessible by anything "downstream" of it in the code, until the current scope is exited (by leaving a method or loop, for instance).
+
+Ruby is a dynamically and strongly typed. Dynamic as in the type of a variable
+can be altered at any time, and strong because strict rules must be followed
+concerning the usage of typed variables.
+
+### Functions
+
+```Syntax
+def functionname(variable)
+   return <value>
+end
+
+# Example
+def say_hello(name)
+   var = “Hello, ” + name
+   return var
+end
+
+# Calling a Function
+function param1, param2
+puts say_hello("alex")	# puts displays to console
 
 ---
 ### Code Samples
@@ -31,6 +55,11 @@ def countdown(n)
   countdown(n-1)    # getting closer to base case 
 end  
 
+# Array Declaration Example code:
+
+array = [ '1', '2', '3' ] # simplest
+
+Array.new(3, &plus_1) # => [1, 2, 3] # alternative method
 
 
 
