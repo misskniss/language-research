@@ -1,2 +1,2 @@
 php: jmazzare
-ruby: acole, kgrosh
+ruby: acole, kgrosh, arthurfc
