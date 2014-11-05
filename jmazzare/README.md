@@ -17,7 +17,7 @@ http://www.php.net
 TODO
 
 
-Describe language
+It's a dynamically typed interpreted language
 
 
 ---
