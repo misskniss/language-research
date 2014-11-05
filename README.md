@@ -11,6 +11,7 @@
 3. Edit `list.txt`
   - If the language you chose is already listed, add your onyx name to that line
   - If the language you chose isn't listed, add it with your onyx name
+5. Merge any new changes from my repo into yours
 1. _Deliverable One_ Send a pull request
 
 *_Due by Thursday November 6_*
@@ -29,6 +30,7 @@
   - An explanation of how functions can be used
   - A code sample showing how to use recursion
   - A code sample showing how to use arrays
+5. Merge any new changes from my repo into yours
 4. _Deliverable One_ Send a pull request
 
 *_Due by Thursday November 13_*
