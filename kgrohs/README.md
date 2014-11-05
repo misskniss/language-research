@@ -16,10 +16,15 @@ https://www.ruby-lang.org/en/
 ---
 
 > Variables in Ruby: 
+> 
 > $			A global variable
+> 
 > @			An instance variable
+> 
 > [a-z] 	or _	A local variable
+> 
 > [A-Z]		A constant
+> 
 > @@		A class variable
 
 
@@ -31,6 +36,7 @@ Describe language
 ### Code Samples
 
 ```ruby
+# The following code creates an array of 5 numbers, 1 through 5.
 nums = [1, 2, 3, 4, 5]
 
 nums.each do |num|
