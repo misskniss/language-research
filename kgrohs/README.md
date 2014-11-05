@@ -15,29 +15,27 @@ https://www.ruby-lang.org/en/
 
 ---
 
-> Variables in Ruby
-> $		A global variable
-> @		An instance variable
+> Variables in Ruby: 
+> $			A global variable
+> @			An instance variable
 > [a-z] 	or _	A local variable
-> [A-Z]	A constant
+> [A-Z]		A constant
 > @@		A class variable
 
 
 Describe language
 
+ TODO
 
 ---
 ### Code Samples
 
-```php
-# arrays in old php
-$colors = array("red", "orange", "blue");
+```ruby
+nums = [1, 2, 3, 4, 5]
 
-# and in new php
-$colors = ["red", "orange", "blue"];
-
-# there are also array objects
-$obj = new ArrayObject($colors);
+nums.each do |num|
+    puts num
+end
 
 # you can loop with for , foreach
 for ($i=0; $i<length($colors); $i++) {
