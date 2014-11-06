@@ -7,3 +7,4 @@ clojure:
 swift:
 dart:
 SQL: jlewis
+MicroPython: jkniss
