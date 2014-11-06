@@ -9,3 +9,4 @@ dart: tfogdall
 SQL: jlewis
 MicroPython: jkniss
 R: sbradbur
+Galaxy: astout
