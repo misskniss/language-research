@@ -8,3 +8,4 @@ swift: ncabral
 dart: tfogdall
 SQL: jlewis
 MicroPython: jkniss
+R: sbradbur
