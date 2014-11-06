@@ -5,6 +5,6 @@ rust:
 scala:
 clojure:
 swift: ncabral
-dart:
+dart: tfogdall
 SQL: jlewis
 MicroPython: jkniss
