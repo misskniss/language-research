@@ -3,7 +3,7 @@ ruby: acole, kgrosh, arthurfc, adebaca, mthurmon, zlambert
 go:
 rust:
 scala:
-clojure:
+clojure: dhampikian
 swift: ncabral, mtaylor
 dart: tfogdall
 SQL: jlewis
