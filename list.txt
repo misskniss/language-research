@@ -4,7 +4,7 @@ go:
 rust:
 scala:
 clojure: dhampikian
-swift: ncabral, mtaylor
+swift: ncabral, mtaylor, jpeng
 dart: tfogdall
 SQL: jlewis
 MicroPython: jkniss
