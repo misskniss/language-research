@@ -2,7 +2,7 @@ php: jmazzare
 ruby: acole, kgrosh, arthurfc, adebaca, mthurmon, zlambert
 go:
 rust:
-scala:
+scala: btombari
 clojure:
 swift: ncabral
 dart: tfogdall
