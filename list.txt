@@ -1,5 +1,5 @@
 php: jmazzare
-ruby: acole, kgrosh, arthurfc, adebaca, mthurmon, zlambert, yyang
+ruby: acole, kgrosh, arthurfc, adebaca, mthurmon, zlambert, yyang, jdelagar
 go:
 rust:
 scala:
