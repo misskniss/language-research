@@ -5,7 +5,7 @@ rust:
 scala: btombari
 clojure: dhampikian
 swift: ncabral, mtaylor, jpeng
-dart: tfogdall
+dart: tfogdall, cjohnson
 SQL: jlewis
 MicroPython: jkniss
 R: sbradbur
