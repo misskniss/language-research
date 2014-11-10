@@ -12,7 +12,7 @@ concepts in fewer lines of code than Java or C++.
 ##Uses
 As a result of its ease of use, Python tends to be slower than other languages but often 
 
-take much less time to develope. This makes it a good choice for any project where 
+take much less time to develop. This makes it a good choice for any project where 
 
 runtime isn't a significant factor.
 
@@ -21,14 +21,14 @@ Similar to Java, Python is compiled into bytecode, which is then executed by an
 interpreter. 
 
 ##Scope Rules
-Like most modern programming languages, Python is staticly scoped. There are three levels 
+Like most modern programming languages, Python is statically scoped. There are three levels 
 
 of scope: function, module, and global.
 
 ##Typing System
 Python is both dynamically and strongly typed. Meaning a variable's type can be changed, 
 
-but the variable can be used in a way that isn't defined for it's data type.
+but the variable can be used in a way that isn't defined for its data type.
 
 ##Functions
 Function arguments are passed by reference. Unlike most languages, Python functions and 
