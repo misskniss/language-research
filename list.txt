@@ -9,5 +9,5 @@ SQL: jlewis
 MicroPython: jkniss
 R: sbradbur
 Galaxy: astout
-C#: cowens
+C#: cowens, rlamichhane
 Python: mhandysi cbarton
