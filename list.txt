@@ -1,6 +1,6 @@
 php: 
 ruby: acole, kgrosh, arthurfc, adebaca, mthurmon, zlambert, yyang, jdelagar, lmatsinde, dmesenbr
-go:
+go:mclausen
 scala: btombari
 clojure: dhampikian
 swift: ncabral, mtaylor, jpeng
