@@ -39,24 +39,33 @@ Describe language
 # The following code creates an array of 5 numbers, 1 through 5.
 nums = [1, 2, 3, 4, 5]
 
+# you can loop with .each
 nums.each do |num|
     puts num
 end
 
-# you can loop with for , foreach
-for ($i=0; $i<length($colors); $i++) {
-  print($colors[i]);
-}
+# Ruby has some built in functionality 
+Math.sqrt(9)
 
-# access through indices starting from 0
-$colors[0] = "pink";
+# Ruby can create methods
+def h
+  puts "Hello World!"
+end
 
-foreach ($colors as $color) {
-  print($color);
-}
-
-```
-
+# Ruby can even create classes and methods can have optional parameters..
+class Greeter
+ def initialize(name = "World")
+     @name = name
+   end
+   def say_hi
+     puts "Hi #{@name}!"
+   end
+   def say_bye
+     puts "Bye #{@name}, come back soon."
+   end
+ end
+ 
+ 
 TODO
 
 more code samples
