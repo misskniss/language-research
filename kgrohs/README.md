@@ -10,11 +10,8 @@ Ruby
 > According to its authors, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp.
 > It supports multiple programming paradigms, including functional, object-oriented, and imperative.
 > It also has a dynamic type system and automatic memory management.
-
-https://www.ruby-lang.org/en/
-
----
-
+>
+> The scope rules of Ruby are as follows:
 > Variables in Ruby: 
 > 
 > $			A global variable
@@ -26,12 +23,15 @@ https://www.ruby-lang.org/en/
 > [A-Z]		A constant
 > 
 > @@		A class variable
-
-
-Describe language
-
- TODO
-
+>
+> Ruby is dynamically and strongly typed.
+>
+> Functions in Ruby start with the 'def' reserved word followed by functionname(parameter1,parameter2) and have a return value
+> and an end to suggest the end of a function.
+>
+>
+>
+https://www.ruby-lang.org/en/
 ---
 ### Code Samples
 
@@ -64,10 +64,18 @@ class Greeter
      puts "Bye #{@name}, come back soon."
    end
  end
- 
- 
-TODO
-
-more code samples
 
 
+# Recursion in Ruby can be used like other languages that use its
+def countdown(n)
+  return if n.zero? # base case
+  puts n
+  countdown(n-1) 
+end               
+
+countdown(5)
+5
+4
+3
+2
+1
