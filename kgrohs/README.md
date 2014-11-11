@@ -1,4 +1,5 @@
 Konrad Grohs
+LW part 1 and 2
 ===============
 
 Ruby
@@ -72,7 +73,7 @@ def countdown(n)
   puts n
   countdown(n-1) 
 end               
-
+# output:
 countdown(5)
 5
 4
