@@ -77,6 +77,7 @@ dynamically.
 /* Simple program that uses recursion to generate partial sums
  * of the positive integers and the squares of the positive integers.
  */
+
 var intacc = 0;
 var sqacc = 0;
 
