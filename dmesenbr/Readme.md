@@ -6,7 +6,7 @@ Ruby is a flexable multi-use scripting language released first in 1995 by Yukihi
 
 Currently Ruby is used most commonly with the Ruby on Rails Framework to create websites and web content. It is growing in popularity because of its easy to use syntax and fast development cycles.
 
-## Technical Details
+#### Technical Details
 
 Ruby is run through an interpreter as it is a scripting language. It is very high level and all of the memory allocation is automatic. The language is strongly object oriented as even literals are objects. 
 
@@ -21,11 +21,13 @@ Ruby uses both duck and dynamic typing. The language will complain if you pass t
 
 **Functions**
 
-
+Since Ruby is almost completely object oriented, every variable is an object and therefore has functions.
 
 **Recursion Sample**
 
-
+    Some code here;
+    lalala
 
 **Array Sample**
 
+    More Code!!!
