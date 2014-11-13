@@ -11,3 +11,4 @@ R: sbradbur
 Galaxy: astout
 C#: cowens, rlamichh
 Python: mhandysi cbarton
+Haskell: jpack
