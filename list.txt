@@ -1,5 +1,5 @@
 php: 
-ruby: acole, kgrosh, arthurfc, adebaca, mthurmon, zlambert, yyang, jdelagar, lmatsinde, dmesenbr
+ruby: acole, kgrosh, arthurfc, adebaca, mthurmon, zlambert, yyang, jdelagar, lmatsind, dmesenbr
 go:mclausen
 scala: btombari
 clojure: dhampikian
@@ -10,5 +10,5 @@ MicroPython: jkniss
 R: sbradbur
 Galaxy: astout
 C#: cowens, rlamichh
-Python: mhandysi cbarton
+Python: mhandysi, cbarton
 Haskell: jpack
