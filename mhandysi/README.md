@@ -136,7 +136,7 @@ main()
 > Lambda functions are functions that can take any number of arguments, not within parentheses, and returns the value of a single expression.
 > Lambda functions also cannot contain more than one expression.
 
-##Syntax
+###Syntax
 
 ```python
 #assign the return value of lambda to g
@@ -171,7 +171,7 @@ listName = [value1, value2, valu3,]
 
 ```
 
-###Example List
+###Example
 
 ```python
 
