@@ -38,7 +38,7 @@ def function():
 def function1():
     x = 5
     def function2():
- 	y = x + 5
+ 		y = x + 5
     print(x + y)
 # x is visible to the entire block.
 # y is only visible inside function2.
@@ -52,7 +52,7 @@ x = 5
 def function1():
     y = x
     def function2():
-	z = y + x
+		z = y + x
      	# will print 10
         print z
     # will print 5
@@ -65,13 +65,14 @@ print x
 Python Functions
 ----------------
 
-###Syntax
 > Python functions begin with the 'def' keyword, followed by the function name
 > and parentheses which can contain a number of parameters.
 
 > The beginning of the function code starts with a ':' after the parentheses.
 > Functions in pything can also have an optional return statement which can
 > return an expression of sorts or nothing at all.
+
+###Syntax
 
 ```python
 
@@ -120,14 +121,37 @@ def main():
 def factorial(num):
     #num is 0 return 1
     if num == 0:
-   	return 1
+	   	return 1
     #recurse until it reaches 0
     else:
-	return num * factorial(num-1)
+		return num * factorial(num-1)
 
 main() 
 
 ```
+
+###Lambda (anonymous) Functions
+
+> Python also supports an idea from Scheme or Lisp called Lambda(Anonymous) Functions.
+> Lambda functions are functions that can take any number of arguments, not within parentheses, and returns the value of a single expression.
+> Lambda functions also cannot contain more than one expression.
+
+##Syntax
+
+```python
+#assign the return value of lambda to g
+g = lambda x: x*2
+
+#reference the function by calling it through g
+g(3)
+#will print 6
+
+#call lambda function without variable assignment
+(lambda x: x*2)(3)
+#will print 6
+
+```
+
 
 Python Lists & Arrays
 -----------------------
@@ -207,6 +231,7 @@ print numbers[3]
 
 #assign '500' as 4th element of numbers
 numbers[3] = 500
+
 #access 4th element again
 print numbers[3]
 #prints 500
