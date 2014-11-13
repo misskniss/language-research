@@ -250,12 +250,8 @@ print numbers[3]
 
 > One other major difference is there is no array type for strings.
 
-###Syntax
-
 > Arrays are initialized to a variables name with the keyword "array", with a
-> typecode and initializer.
-
->the typcosed for defining the type of array are as follows:
+> typecode and initializer. The typcodes for defining the type of array are as follows:
 
 - ‘b’ -> Represents signed integer of size 1 byte
 - ‘B’ -> Represents unsigned integer of size 1 byte
@@ -270,6 +266,8 @@ print numbers[3]
 - ‘L’ -> Represents unsigned integer of size 4 bytes
 - ‘f’ -> Represents floating point of size 4 bytes
 - ‘d’ -> Represents floating point of size 8 bytes
+###Syntax
+
 
 
 ```python
