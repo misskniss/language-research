@@ -8,3 +8,33 @@
 <p> - Expressive like a scripting language </p>
 <p> - Designed for safety </p>
 <p> - Provides object-oriented features </p>
+
+<h4>SCOPE</h4>
+<p> </p>
+
+<h4>TYPE</h4>
+<p>Int, Float, Bool, String</p>
+<p>var is used for variables, let is used for constants</p>
+<p>example: var welcomeMessage: String</p>
+
+<h4>Function</h4>
+<p>function with return type int:</p>
+<p>func halfOpenRangeLength(start: Int, end: Int) -> Int { </p>
+<p>   return end - start </p>
+<p>}</p>
+<p>function with no return type:</p>
+<p>func sayGoodbye(personName: String) {</p>
+<p>  println("Goodbye, \(personName)!")</p>
+<p>}</p>
+
+<h4>ARRAY USE</h4>
+<p>var shoppingList: [String] = ["Eggs", "Milk"]</p>
+<p>// shoppingList has been initialized with two initial items<p>
+<p>var firstItem = shoppingList[0] </p>
+<p>// firstItem is equal to "Eggs" </p>
+<p>shoppingList.append("Flour")</p>
+<p>// shoppingList now contains 3 items, and someone is making pancakes</p>
+<p>shoppingList += ["Baking Powder"]</p>
+<p>// shoppingList now contains 4 items</p>
+<p>shoppingList += ["Chocolate Spread", "Cheese", "Butter"]</p>
+<p>// shoppingList now contains 7 items</p>
