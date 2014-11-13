@@ -26,28 +26,29 @@ Ruby is a dynamically and strongly typed. Dynamic as in the type of a variable
 can be altered at any time, and strong because strict rules must be followed
 concerning the usage of typed variables.
 
-### Functions
+### Code Examples
 
-```Syntax
+# Functions
+# Syntax
+
 def functionname(variable)
    return <value>
 end
 
 # Example
+
 def say_hello(name)
    var = “Hello, ” + name
    return var
 end
 
 # Calling a Function
+
 function param1, param2
 puts say_hello("alex")	# puts displays to console
 
----
-### Code Samples
 
-```Ruby
-# Recursion Example code:
+# Recursion Example:
 
 def countdown(n)
   return if n.zero? # base case
@@ -55,10 +56,9 @@ def countdown(n)
   countdown(n-1)    # getting closer to base case 
 end  
 
-# Array Declaration Example code:
+# Array Declaration Example:
 
 array = [ '1', '2', '3' ] # simplest
-
 Array.new(3, &plus_1) # => [1, 2, 3] # alternative method
 
 
