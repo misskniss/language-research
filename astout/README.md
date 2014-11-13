@@ -1,5 +1,5 @@
 #GalaxyScript
-#Ayrton Stout
+Ayrton Stout
 <br />
 <br />
 #History: 
