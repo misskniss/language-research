@@ -266,11 +266,12 @@ print numbers[3]
 - ‘L’ -> Represents unsigned integer of size 4 bytes
 - ‘f’ -> Represents floating point of size 4 bytes
 - ‘d’ -> Represents floating point of size 8 bytes
+
+
 ###Syntax
 
-
-
 ```python
+
 arrayName = array(typecode, [initializer])
 
 ```
