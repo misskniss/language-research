@@ -21,13 +21,30 @@ Ruby uses both duck and dynamic typing. The language will complain if you pass t
 
 **Functions**
 
-Since Ruby is almost completely object oriented, every variable is an object and therefore has functions.
+Functions in Ruby are defined using the keywords __def__ and __end__ to mark their beginning and end. For example:
+
+        def write_name name
+            puts name
+        end
+
+Functions can also be embeded in classes and become public member functions then by default.
 
 **Recursion Sample**
 
-    Some code here;
-    lalala
+For this sample I create a method which takes a positive integer and returns the sum of all its digits
+
+        def sumofdigits number
+            if number<10 
+                sum=number
+            else
+                sum=(number/10)+sumofdigits(number%10)
+            return sum
+        end
 
 **Array Sample**
 
-    More Code!!!
+    a = [1,2,3,4,5,6]
+    sum=0
+    a.each do |x|
+        sum+=x
+    end
