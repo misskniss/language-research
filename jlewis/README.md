@@ -20,27 +20,27 @@ User defined functions and store procedures are generally related to a specific 
 Functions, like in many procedural languages, provide general purpose computation or database select statements with a return value. There are also many built in server functions to perform things like table aggregation or retrieve the current system date and time.
 
 ### Recursion
-Stored procedure recursion is possible, but disabled by default because of demands on the thread stack space. Stoed functions cannot be recursive.
+Stored procedure recursion is possible, but disabled by default because of demands on the thread stack space. Stored functions cannot be recursive.
 
-CREATE PROCEDURE total(IN number INT, OUT result INT)
-BEGIN
-	DECLARE temp INT DEFAULT 0;
-	DECLARE temp2 INT DEFAULT 0;
-	DECLARE tempId INT DEFAULT NULL;
-	SELECT amount from sales_table INTO temp;
-	SELECT parent_id from sales_table INTO tempId;
-
-IF tempId is NULL
-THEN
-	set result=temp;
-ELSE
-	CALL total(tempID, temp2);
-	SET result=temp+temp2;
-END IF;
-END;
-
-CALL total(1, @total);
-SELECT @ total;
+CREATE PROCEDURE total(IN number INT, OUT result INT)  
+BEGIN  
+	DECLARE temp INT DEFAULT 0;  
+	DECLARE temp2 INT DEFAULT 0;  
+	DECLARE tempId INT DEFAULT NULL;  
+	SELECT amount from sales_table INTO temp;  
+	SELECT parent_id from sales_table INTO tempId;  
+  
+IF tempId is NULL  
+THEN  
+	set result=temp;  
+ELSE  
+	CALL total(tempID, temp2);  
+	SET result=temp+temp2;  
+END IF;  
+END;  
+  
+CALL total(1, @total);  
+SELECT @ total;  
 
 
 ### Arrays
