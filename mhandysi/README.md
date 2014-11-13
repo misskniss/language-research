@@ -17,7 +17,7 @@ Python
 > verifying the type-safety of a program at run-time.
 
 Python Scopes
---------------------------
+-------------
 
 ---
 ### Scop Rules
@@ -53,14 +53,14 @@ def function1():
     y = x
     def function2():
 	z = y + x
- 	# will print 10
- 	print z
+     	# will print 10
+        print z
     # will print 5
     print y
 # is visible through entire program
 print x
 
-````
+```
 
 Python Functions
 ----------------
@@ -166,6 +166,7 @@ list_3 = ["Me", "You", "Them", 1, 2 ,3];
 
 > Accessing elements in a List is done by referencing the index value
 > starting at 0.
+
 ```python
 
 #list of numbers
