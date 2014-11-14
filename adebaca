@@ -1,0 +1,35 @@
+SQL stands for Structured Query Language and is a special-purpose programming language designed for managing relational database management systems. SQL was designed for data manipulation and based upon relational algebra. SQL was one of the first coercial languages for Edgar Codd’s relational model. It became a standard of the American National Standards Institute in 1986. 
+
+Purpose
+SQL seems to be one of the common choices of database management systems of companies. I works with many languages, such as C#, java, php, vba, and I’m sure many more. It works great for bringing up the data that is important to its user. 
+Language elements
+Clauses, these are constituent components of statements and queries.
+Expressions, that can produce either scalar values, or tables consisting of columns and rows of data
+Predicates, are specified conditions that can be evaluated to Boolean truth vlues and are used to limit the effects of statements and queries
+Queries, that retrieve data based on criteria
+Statements, that have a persistent effect on schemata and data.
+Scoping
+SQL used both static and dynamic scoping that is set at runtime. Once a session is lost the client will lose scope of the variables. You can query a table and set it to a variable name that will have no effect on the original table name and make queries with the new variable table name to the original table.  These names will lose scope once the query has been executed. 
+Functions
+Functions are usually carried out by other languages that call the queries that are written in SQL. These queries will retrieve the data that the user needs. In other words a query is a function in SQL, there is also Stored Procedures which if done correctly can be used as a function to return data to the user.
+Recursion
+Recursion with SQL is possible with stored procedures, but is usually done with another language calling a SQL query. This seems to be the best way that I have come across and most common way of using recursion with SQL.
+Arrays
+A SQL table basic is an array of arrays. It seems very strange to me that there is no SQL command that loads a SQL table into a java array. To my knowledge this can only be done through some sort of loop. 
+Examples of SQL code:
+These two queries below are examples of SQL code.
+The first just searches for an address that is has a match to 6212 in ada county and matches it with another table that has all the stats for the property. The second query is more interesting. 
+use realestate;
+SELECT * from adaparcel a,
+resich r
+where a.address like '%6212%'
+and r.parcel=a.parcel 
+
+This query matches all the property currently in foreclosure in Ada county where the amount due in default is less than the Ada county assed value. This query gives all those real estate hunters a for sure list of best foreclosure buys, where the amount the property is sold at auction will be less than the assed value. 
+select  * from 
+adaparcel a,
+estate e
+where e.address like CONCAT(a.stnum,' %') and e.address like CONCAT('%',a.stnam,'%')
+and
+e.amountdue<a.assval;
+
