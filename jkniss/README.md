@@ -280,12 +280,12 @@ a=1
 What regular python *really* does is check if the value you are assigning is in
 the range -5 to 256. If so, it says "this is a small integer" so it actually
 pre-allocates a whole array of integer objects from -5 to 256, sets a pointer
-to the one you asked for in the array and calls it "a". So that means that the
-call to create this one integer is actually allocated 257 integers + 5 (for
+to the one you asked for in the array and calls it "a". So that means the
+call to create this one integer has actually allocated 257 integers + 5 (for
 tracking) which is 262 integers in total. 
 
 Each integer in this case is 16bytes. So when you allocate a single integer you
-are really fetching 262 * 16 bytes of memory or 4KB of RAM. When you have a
+are really fetching 262 * 16 bytes of memory, or 4KB of RAM. When you have a
 small system like a microcontroller with 192KB of RAM, that is a
 pretty expensive piece of data.
 
@@ -294,7 +294,7 @@ allocated in RAM. So...you have a bit of a problem with running languages like
 CPython on a embedded system when it comes to the primary way these languages
 use memory. 
 
-RAM is something we usuall don't worry about all that much in our
-laptops or desktops (which often have gigs and gigs of RAM). But, as mentioned
+RAM is something we usually don't worry about all that much in our
+laptops or desktops (which often have gigs and gigs of RAM) but, as mentioned
 above, a microcontroller's number one constraint is RAM.
 
