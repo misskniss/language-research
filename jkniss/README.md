@@ -73,6 +73,9 @@ acts as stdin/stdout
 
 Brief History
 -------------
+Micro Python was created by Damien George in 2013 and released as a Kickstarter
+Project that was fully funded (and then some) and completed in December of 2013.
+
 MicroPython was developed to  minimize RAM usage. RAM being a primary
 constraint in development for a Microcontroller. Typical RAM available is
 192 KB (on the Micro Python Dev board for instance). This is in stark
