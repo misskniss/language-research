@@ -76,14 +76,14 @@ Brief History
 Micro Python was created by Damien George in 2013 and released as a Kickstarter
 Project that was fully funded (and then some) and completed in December of 2013.
 
-MicroPython was developed to  minimize RAM usage. RAM being a primary
+Micro Python was developed to minimize RAM usage. RAM being a primary
 constraint in development for a Microcontroller. Typical RAM available is
 192 KB (on the Micro Python Dev board for instance). This is in stark
 constrast to the Gigabytes (or much more) of RAM available in your typical
 laptop or other computer system. Because RAM is the general purpose "working"
 memory used for storing data and variables created by the running programs,
 the space required to implement any programs or to store data needs to be
-minimized quite a bit. 
+minimized quite a bit for use with microcontrollers. 
 
 - [Micro Python PyCon UK 2014 Slides](http://micropython.org/static/resources/pyconuk14-mpinternals.pdf "Micro Python PyCon UK 2014")
 - [Some differences between CPython & Micro Python](https://github.com/micropython/micropython/wiki/Differences)
@@ -146,7 +146,7 @@ Typing
 
 Python is both dynamically and strongly typed. 
 
-- The interpreter tracks what type variable refer to (strong typing).
+- The interpreter tracks what type variables refer to (strong typing).
 - Values assigned to variables have a type, but a variable itself does not have
 to be declared as a particular type before assigning a value to it. (dynamic
 typing)
@@ -160,8 +160,8 @@ ver = micro + python	<--TypeError: cannot concatenate 'str' and 'int' objects
 ```
 
 Strong typing is seen when the interpreter complains about trying to
-concatenate different types. The interpreter is tracking what type each
-variable refers to *currently*.
+concatenate values of different types. The interpreter is tracking what type
+each variable refers to *currently*.
 
 Dynamic typing can be seen by the lack of type declaration on the creation and
 assignment/re-assignment of the variables 'micro' and 'python'. 
@@ -200,7 +200,7 @@ import pyb
 Recursion Example(s)
 -------------------
 
-In general, recursion is possible but should be avoided when possible with
+In general, recursion is possible but should be avoided where possible with
 Micro Python. Recursion is an expensive feature as each iteration needs to
 save state (memory for which is allocated in RAM). 
 
@@ -219,7 +219,7 @@ print(single_dem[3])
 
 ```
 
-Multidimensional Arrays
+Multi-dimensional Arrays
 
 ```
 multi_dem = [['a','c','b'],[1,2,3]]
@@ -246,7 +246,7 @@ General Implementation
 
 Micro Python was written in ANSI C and compiled with gcc. The C API allows the
 developer to use C functions in their Python code and vice versa. See details
-discussed by Damien George on the [Micro Python Kickstater](https://www.kickstarter.com/projects/214379695/micro-python-python-for-microcontrollers/posts/679050).
+discussed by Damien George on the [Micro Python Kickstater Page](https://www.kickstarter.com/projects/214379695/micro-python-python-for-microcontrollers/posts/679050).
 
 [Full Micro Python Grammar](http://micropython.org/ks/grammar.html)
 
@@ -269,7 +269,7 @@ final parse tree is proportional to the amount of Python code in the source
 file.
 
 Keeping the lexer and parser small goes a long way to making Micro Python
-compact enough to fit on a microcontroller. " [Damien George: Micro Python Creator](https://www.kickstarter.com/projects/214379695/micro-python-python-for-microcontrollers/posts/669549)
+compact enough to fit on a microcontroller. " - [Damien George: Micro Python Creator](https://www.kickstarter.com/projects/214379695/micro-python-python-for-microcontrollers/posts/669549)
 
 Example of CPython's expensive integers that Micro Python optimizes for...
 --------------------------------------------------------------------------
@@ -287,10 +287,14 @@ tracking) which is 262 integers in total.
 Each integer in this case is 16bytes. So when you allocate a single integer you
 are really fetching 262 * 16 bytes of memory or 4KB of RAM. When you have a
 small system like a microcontroller with 192KB of RAM, that is a
-pretty expensive piece of data. A microcontroller's number one constraint is RAM.
+pretty expensive piece of data.
+
+Because the variable is program data (and presumably not a const) it gets
+allocated in RAM. So...you have a bit of a problem with running languages like
+CPython on a embedded system when it comes to the primary way these languages
+use memory. 
+
 RAM is something we usuall don't worry about all that much in our
-laptops or desktops (which often have gigs and gigs of RAM). Because the variable
-is program data (and presumably not a const) it gets allocated in RAM. So...you
-have a bit of a problem with running languages like CPython on a embedded system
-when it comes to the primary way these languages use memory. 
+laptops or desktops (which often have gigs and gigs of RAM). But, as mentioned
+above, a microcontroller's number one constraint is RAM.
 
