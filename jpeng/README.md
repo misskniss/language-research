@@ -15,7 +15,7 @@
 <h4>TYPE</h4>
 <p>Int, Float, Bool, String</p>
 <p>var is used for variables, let is used for constants</p>
-<p>example: var welcomeMessage: String</p>
+<pre>var welcomeMessage: String</pre>
 
 <h4>Function</h4>
 <p>function with return type int:</p>
