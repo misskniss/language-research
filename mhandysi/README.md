@@ -69,7 +69,7 @@ Python Functions
 > and parentheses which can contain a number of parameters.
 
 > The beginning of the function code starts with a ':' after the parentheses.
-> Functions in pything can also have an optional return statement which can
+> Functions in python can also have an optional return statement which can
 > return an expression of sorts or nothing at all.
 
 ###Syntax
