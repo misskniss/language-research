@@ -238,7 +238,7 @@ print(multi_dem[1][2])
 > 3
 ```
 
-### Language Implementation Details 
+Language Implementation Details 
 ===================================
 
 General Implementation
