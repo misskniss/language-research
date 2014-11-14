@@ -31,7 +31,7 @@ def function():
 # x is only visible inside this function 
 ```
 
-> If a variable is assigned in an enclosing 'def,' it is nonlocal to nested 
+> If a variable is assigned in an enclosing 'def,' it is non-local to nested 
 > functions.
 
 ```python
@@ -244,7 +244,7 @@ print numbers[3]
 > elements which can be accessed by referrencing the index of said elements
 > starting at 0.
 
-> The one major difference between arrays and lists is arrays are data specific.
+> The one major difference between arrays and lists is arrays are type specific.
 > They can only hold one type of elements, like integers, strings or other
 > types.
 
