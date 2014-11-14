@@ -11,8 +11,7 @@ as expressive and enjoyable as a scripting language. It supports playgrounds, an
 innovative feature that allows programmers to experiment with Swift code and see the 
 results immediately, without the overhead of building and running an app.
 
-An explanation of the scope rules
-
+Swift uses global scope rules.
 
 The typing system in Swift is interesting because you assign variables in swift like this:
 let testNumber = 5
