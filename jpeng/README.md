@@ -19,13 +19,13 @@
 
 <h4>Function</h4>
 <p>function with return type int:</p>
-<p>func halfOpenRangeLength(start: Int, end: Int) -> Int { </p>
-<p>   return end - start </p>
-<p>}</p>
+<pre>func halfOpenRangeLength(start: Int, end: Int) -> Int {
+         return end - start
+}</pre>
 <p>function with no return type:</p>
-<p>func sayGoodbye(personName: String) {</p>
-<p>  println("Goodbye, \(personName)!")</p>
-<p>}</p>
+<pre>func sayGoodbye(personName: String) {
+  println("Goodbye, \(personName)!")
+}</pre>
 
 <h4>RECURSION</h4>
 <pre>func test(val: Int) {
