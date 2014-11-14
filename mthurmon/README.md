@@ -31,28 +31,29 @@ duck typing/dynamic
 
 Ruby methods are used to bundle one or more reputable statements into a single unit.  Ruby methods are a set of expressions that return a value.  Methods should be defined before calling them. See below for function examples.
 
-'''ruby
+```ruby
 def method_name [( [arg [= default]]...[, * arg [, &expr ]])]
    expr..
 end
-'''
+```
 
-'''ruby
+```ruby
 def method_name 
    expr..
 end
-'''
-'''ruby
+```
+
+```ruby
 def method_name (var1=value1, var2=value2)
    expr..
 end
-'''
+```
 
 
 
 ###Code sample of Recursion:
 
-'''ruby
+```ruby
 def factorial(n)
     if n == 0
         1
@@ -62,12 +63,12 @@ def factorial(n)
 end
  
 puts factorial(5) # =&gt; 120
-'''
+```
 
 
 ###Code Sample demonstrating how to use arrays
 
-'''ruby
+```ruby
 arr = [1, 2, 3, 4, 5, 6]
 arr[2]    #=> 3
 arr[100]  #=> nil
@@ -75,4 +76,4 @@ arr[-3]   #=> 4
 arr[2, 3] #=> [3, 4, 5]
 arr[1..4] #=> [2, 3, 4, 5]
 arr[1..-3] #=> [2, 3, 4]
-'''
+```
