@@ -9,9 +9,6 @@
 <p> - Designed for safety </p>
 <p> - Provides object-oriented features </p>
 
-<h4>SCOPE</h4>
-<p> </p>
-
 <h4>TYPE</h4>
 <p>Int, Float, Bool, String</p>
 <p>var is used for variables, let is used for constants</p>
