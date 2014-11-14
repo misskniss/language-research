@@ -1,5 +1,5 @@
 php: 
-ruby: acole, kgrosh, arthurfc, adebaca, mthurmon, zlambert, yyang, jdelagar, lmatsind, dmesenbr
+ruby: acole, kgrosh, arthurfc, adebaca, mthurmon, zlambert, yyang, jdelagar, lmatsind, dmesenbr,cnelson
 go:mclausen
 scala: btombari
 clojure: dhampikian
