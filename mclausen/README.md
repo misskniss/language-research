@@ -45,24 +45,23 @@ Go's type system has no hierarchy, so no time is spent defining the relationship
 between types. Also, although Go has static types the language attempts to make types 
 feel lighter weight than in typical OO languages.
 ## Functions ##
-Go allows first class functions, higher-order functions, user-defined function types, function literals, closures, and multiple return values. Therefore, it can be used quite well as a functional programming language. 
+Go allows first class functions, higher-order functions, user-defined function types, function literals, closures, and multiple return values. Therefore, it can be used quite well as a functional programming language.  Because it has the option of multiple return values it improves upon some of the awkwardness of C.
 ## Recursion Example ##
 	package main
 	import “fmt”
-	func MyRecurssion(number int) int {
+	func MyRecurssion(value int) int {
 
-    if number == 1 {
-
-        return number
-    }
-
-    return number + MyRecurssion(number+1)
+   		if value == 0 {
+			return value
+		}
+		
+		retune value + MyRecurssion(value-2)
+		
 	}
 
 	func main() {
 
-    answer := MyRecurssion(4)
-    fmt.Printf("Recursive: %d\n", answer)
+  	  fmt.Printf( MyRecurssion(8))
 	}
 
 ## Array Example##
