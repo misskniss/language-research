@@ -1,11 +1,11 @@
 php: 
-ruby: acole, kgrosh, arthurfc, adebaca, mthurmon, zlambert, yyang, jdelagar, lmatsind, dmesenbr
+ruby: acole, kgrosh, arthurfc, mthurmon, zlambert, yyang, jdelagar, lmatsind, dmesenbr
 go:mclausen
 scala: btombari
 clojure: dhampikian
 swift: ncabral, mtaylor, jpeng
 dart: tfogdall, cjohnson
-SQL: jlewis
+SQL: jlewis, adebaca
 MicroPython: jkniss
 R: sbradbur
 Galaxy: astout
