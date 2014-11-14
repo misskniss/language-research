@@ -27,14 +27,23 @@
 <p>  println("Goodbye, \(personName)!")</p>
 <p>}</p>
 
+<h4>RECURSION</h4>
+<pre>func test(val: Int) {
+      println("\(val)")
+      if val > 0 {</p>
+        test(val - 1)
+    }
+}
+test(3)</pre>
+
 <h4>ARRAY USE</h4>
-<p>var shoppingList: [String] = ["Eggs", "Milk"]</p>
-<p>// shoppingList has been initialized with two initial items<p>
-<p>var firstItem = shoppingList[0] </p>
-<p>// firstItem is equal to "Eggs" </p>
-<p>shoppingList.append("Flour")</p>
-<p>// shoppingList now contains 3 items, and someone is making pancakes</p>
-<p>shoppingList += ["Baking Powder"]</p>
-<p>// shoppingList now contains 4 items</p>
-<p>shoppingList += ["Chocolate Spread", "Cheese", "Butter"]</p>
-<p>// shoppingList now contains 7 items</p>
+<pre>var shoppingList: [String] = ["Eggs", "Milk"]
+// shoppingList has been initialized with two initial items
+var firstItem = shoppingList[0] 
+// firstItem is equal to "Eggs" 
+shoppingList.append("Flour")
+// shoppingList now contains 3 items, and someone is making pancakes
+shoppingList += ["Baking Powder"]
+// shoppingList now contains 4 items
+shoppingList += ["Chocolate Spread", "Cheese", "Butter"]
+// shoppingList now contains 7 items</pre>
